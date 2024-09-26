@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>DRDO Careers</title>
+    <link rel="stylesheet" href="careers.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <div>
+            <a href="#">Feedback</a> |
+            <a href="#">Sitemap</a> |
+            <a href="#">FAQs</a> |
+            <a href="login.html">Login</a>
+        </div>
+        <div class="right-icons">
+            <a href="#">Screen Reader Access</a>
+            <a href="#" style="font-size: 1.2em;">A-</a>
+            <a href="#" style="font-size: 1.2em;">A</a>
+            <a href="#" style="font-size: 1.2em;">A+</a>
+            <a href="#" style="background-color: #000; color: #fff; padding: 2px 5px;">A</a>
+            <a href="#" style="background-color: #f00; color: #fff; padding: 2px 5px;">A</a>
+            <a href="#" style="background-color: #00f; color: #fff; padding: 2px 5px;">A</a>
+            <a href="#">English</a> | <a href="#">हिंदी</a>
+            <a href="https://www.facebook.com/DPIDRDO/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/DRDO_India"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com/dpi.drdo"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div><img src="images/India.svg" alt="सत्यमेव जयते" title="सत्यमेव जयते" style="padding-left: 25px;"></div>
+                <div class="vrline"></div>
+                <div><img src="images/logo.png" alt="DRDO" title="DRDO" style="width: 100px; height: 100px;"></div>
+            </div>
+            <div class="text">
+                <h1>रक्षा अनुसंधान एवं विकास संगठन</h1>
+                <h2 style="padding-bottom: 2px;">रक्षा मंत्रालय, भारत सरकार</h2>
+                <h1>Defence Research & Development Organisation</h1>
+                <h2>Ministry of Defence, Government of India</h2>
+            </div>
+        </div>
+        <div class="hrline"></div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>DRDO</li>
+            <li>Organisation</li>
+            <li>Outreach</li>
+            <li class="dropdown">
+                Careers
+                <!-- Submenu for Careers -->
+                <ul class="dropdown-menu">
+                    <li><a href="careers.html">Apply For Job Recruitment</a></li>
+                </ul>
+            </li>
+            <li>Publications</li>
+            <li>RTI</li>
+            <li>Contact Us</li>
+
+            <li class="profile-dropdown">
+                <img src="images/profile.png" alt="Profile" class="profile-img">
+                <ul class="profile-menu">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="login.html">Logout</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <div class="form-container">
+            <form id="application-form">
+                <div class="form-group">
+                    <label for="position"><b>Applying for position*</b></label>
+                    <select id="position" required>
+                        <option value="" selected disabled>Position</option>
+                        <option>Scientist 'B'</option>
+                        <option>Scientist 'C'</option>
+                        <option>Senior Technical Assistant 'B' (STA-B)</option>
+                        <option>Technician 'A'</option>
+                        <option>Junior Research Fellow (JRF)</option>
+                        <option>Senior Research Fellow (SRF)</option>
+                        <option>Technical Officer</option>
+                        <option>Admin & Allied (A&A) Cadre</option>
+                        <option>Multi-Tasking Staff (MTS)</option>
+                        <option>Research Associate (RA)</option>
+                        <option>Assistant Director (Admin)</option>
+                        <option>Personal Assistant</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume"><p></p><b>Resume/CV (PDF only, max 10MB)*</b></label>
+                    <input id="resume" type="file" accept=".pdf" required />
+                    <p id="resume-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="id-proof"><p></p><b>Upload ID Proof (PDF only, max 10MB)*</b></label>
+                    <select id="id-proof-type" required>
+                        <option value="" selected disabled>ID Type</option>
+                        <option>Passport</option>
+                        <option>Driving License</option>
+                        <option>Aadhaar Card</option>
+                        <option>Voter ID</option>
+                        <option>Pan Card</option>
+                    </select>
+                    <p></p>
+                    <input type="file" id="id-proof" accept=".pdf" required />
+                    <p id="id-proof-message"></p>
+                </div>
+
+                <div class="form-group upload-photo">
+                    <label for="photo-upload"><b>Upload Passport Size Photo*</b></label>
+                    <input type="file" id="photo-upload" accept="image/*" required /><p></p>
+                    <img alt="User Photo" src="images/photo.png" id="user-photo" />
+                    <button type="button" id="upload-photo">Upload Photo</button>
+                    <p id="photo-message"></p>
+                </div>
+
+                <div class="form-group" id="form-group">
+                    <label for="captcha"><b>Enter Captcha*</b></label>
+                    <div class="captcha">
+                        <div style="width: 45%; height: 100px; float: left;">
+                            <input id="captcha" type="text" required />
+                        </div>
+                        <div style="margin-left: 60%; height: 100px;">
+                            <img alt="Captcha Image" height="50" src="images/captcha.png" id="captcha-image" />
+                            <button type="button" id="refresh-captcha">Refresh</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/DPIDRDO/">
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/DRDO_India">
+                        <img src="images/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://instagram.com/dpi.drdo">
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-text">
+                    <p>&copy; 2024 Defence Research & Development Organisation, Ministry of Defence, Government of India</p>
+                    <p>All rights reserved.</p>
+                </div>
+                <div class="footer-info">
+                    <p id="last-updated"></p>
+                    <p>Total Visitors: <span id="visitor-count">0</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="careers.js"></script>
+</body>
+
+</html>
