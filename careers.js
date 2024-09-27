@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const correctCaptcha = "6T9JBCDS";
     
         if (captcha === correctCaptcha) {
-            alert('Login successful!');
+            alert('Details Submitted Successfully!!!');
             window.location.href = "selected.html";
         } else {
             alert('Incorrect captcha, please try again.');
