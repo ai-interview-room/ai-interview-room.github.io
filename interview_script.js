@@ -1,6 +1,6 @@
-// Get necessary elements
 const startAnswerBtn = document.getElementById('start-answer-btn');
 const repeatBtn = document.getElementById('repeat-btn');
+const nextQuestionBtn = document.getElementById('next-question-btn'); // New button
 const sideSection = document.querySelector('.side-section');
 const liveCamera = document.getElementById('live-camera');
 const container = document.querySelector('.container');
