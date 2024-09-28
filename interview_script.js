@@ -31,7 +31,7 @@ function exitInterview() {
   } else if (document.msExitFullscreen) { // IE/Edge
     document.msExitFullscreen();
   }
-  window.location.href = 'https://drdo.gov.in'; // Redirect to DRDO website or any other website
+  window.location.href = 'thank.html'; // Redirect to DRDO website or any other website
 }
 
 // Detect when the user tries to exit full screen and show a warning
