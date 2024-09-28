@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Interface</title>
+  <link rel="stylesheet" href="interview_styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="video-section">
+      <video id="question-video">
+        <source src="images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="start-answer-btn" disabled>Start Answer</button>
+      <div class="question-box">
+        <p id="question-text">Describe a situation where you went above and beyond to understand the perspectives of others in your workplace.</p>
+        <button id="repeat-btn" disabled onclick="repeatQuestion()">⟳</button>
+      </div>
+    </div>
+    
+    <div class="side-section">
+      <div class="camera-box">
+        <video id="live-camera" autoplay></video>
+      </div>
+      <div class="branding-box">
+        <img src="images/logo.png" alt="DRDO Logo" class="logo">
+        <p><h2>DRDO</h2></p>
+      </div>
+      <button id="exit-btn" onclick="exitInterview()">Exit Interview</button>
+    </div>
+  </div>
+
+  <script src="interview_script.js"></script>
+</body>
+</html>

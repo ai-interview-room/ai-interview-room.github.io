@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-section {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  #question-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  #start-answer-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .question-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #question-text {
+    font-size: 18px;
+    color: #333;
+    width: 80%;
+  }
+  
+  #repeat-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .side-section {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .camera-box {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  /* Horizontally flipped live video */
+  #live-camera {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transform: scaleX(-1); /* Horizontal flip (mirroring effect) */
+  }
+  
+  .branding-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  #exit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .blinking {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    animation: blinkingText 1.2s infinite;
+  }
+  
+  @keyframes blinkingText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .video-section {
+      width: 100%;
+    }
+  
+    .side-section {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
